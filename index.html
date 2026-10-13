@@ -1,0 +1,146 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tasnia Haque Promy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>body{margin:0}</style>
+<style>
+/* Layout: a single centered profile sheet, name block on top, then labelled sections in a left-label / right-content grid */
+:root{
+  --bg:#f3f6f4; --sheet:#ffffff; --fg:#1b2420; --muted:#5b6b63; --line:#dfe6e1;
+  --accent:#2e6a4f; --accent-soft:#e3efe8; --todo:#9a6b12; --todo-bg:#fbf3e2;
+  --display:"Instrument Serif", Georgia, "Times New Roman", serif;
+  --body:"IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --mono:"IBM Plex Mono", ui-monospace, Menlo, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#111614; --sheet:#171e1b; --fg:#e4ece7; --muted:#9aaba2; --line:#2a3530;
+  --accent:#7cc4a0; --accent-soft:#1f2e27; --todo:#e3b65e; --todo-bg:#2c2416; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#111614; --sheet:#171e1b; --fg:#e4ece7; --muted:#9aaba2; --line:#2a3530;
+  --accent:#7cc4a0; --accent-soft:#1f2e27; --todo:#e3b65e; --todo-bg:#2c2416; color-scheme:dark}
+
+body{background:var(--bg);color:var(--fg);font-family:var(--body);font-size:16px;line-height:1.6}
+.wrap{max-width:760px;margin:0 auto;padding-inline:16px;padding-block:40px 56px}
+.sheet{background:var(--sheet);border:1px solid var(--line);border-radius:6px;padding:clamp(24px,5vw,48px)}
+
+header{display:flex;gap:24px;align-items:center;flex-wrap:wrap;padding-bottom:28px;border-bottom:1px solid var(--line)}
+.avatar{width:96px;height:96px;border-radius:50%;background:var(--accent-soft);color:var(--accent);
+  display:grid;place-items:center;font-family:var(--display);font-size:40px;flex:none}
+.who{min-width:0;flex:1}
+h1{font-family:var(--display);font-weight:400;font-size:clamp(34px,6vw,46px);line-height:1.05;margin:0;text-wrap:balance}
+.headline{margin:8px 0 0;color:var(--muted);font-size:17px}
+.place{margin:6px 0 0;font-family:var(--mono);font-size:13px;letter-spacing:.04em;color:var(--accent);text-transform:uppercase}
+
+section{display:grid;grid-template-columns:150px 1fr;gap:12px 28px;padding-block:28px;border-bottom:1px solid var(--line)}
+section:last-of-type{border-bottom:0;padding-bottom:0}
+h2{margin:2px 0 0;font-family:var(--mono);font-weight:500;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.content{min-width:0}
+p{margin:0;max-width:62ch}
+
+.contact{display:grid;gap:10px}
+.row{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.row .k{font-family:var(--mono);font-size:12px;letter-spacing:.06em;color:var(--muted);width:80px;text-transform:uppercase}
+.row .v{min-width:0;overflow-wrap:anywhere}
+.row a{color:var(--accent);text-decoration-thickness:1px;text-underline-offset:3px}
+button.copy{font:500 12px var(--mono);color:var(--accent);background:transparent;border:1px solid var(--line);border-radius:4px;padding:3px 8px;cursor:pointer}
+button.copy:hover{border-color:var(--accent)}
+button.copy:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+
+.todo{display:inline-block;background:var(--todo-bg);color:var(--todo);font-family:var(--mono);font-size:13px;padding:1px 8px;border-radius:3px}
+
+.edu .deg{font-weight:600}
+.edu .inst{color:var(--muted)}
+
+ol.pubs{list-style:none;margin:0;padding:0;display:grid;gap:20px}
+.pubs .t{font-weight:600;line-height:1.4}
+.pubs .d{color:var(--muted);font-size:15px;margin-top:4px;max-width:62ch}
+.status{display:inline-block;margin-top:8px;font-family:var(--mono);font-size:12px;letter-spacing:.04em;padding:2px 8px;border-radius:3px;border:1px solid var(--line);color:var(--muted)}
+.status.ok{background:var(--accent-soft);color:var(--accent);border-color:transparent}
+
+ul.tags{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:8px}
+ul.tags li{border:1px solid var(--line);border-radius:999px;padding:4px 12px;font-size:14px}
+
+footer{margin-top:20px;text-align:center;font-family:var(--mono);font-size:12px;color:var(--muted)}
+
+@media (max-width:560px){
+  section{grid-template-columns:1fr;gap:12px}
+  .row .k{width:auto;min-width:64px}
+}
+</style>
+</head><body>
+
+<div class="wrap">
+<article class="sheet">
+  <header>
+    <div class="avatar" aria-hidden="true">TP</div>
+    <div class="who">
+      <h1>Tasnia Haque Promy</h1>
+      <p class="headline">Computer Science &amp; Engineering graduate · Bangla NLP and machine learning researcher</p>
+      <p class="place">Sylhet, Bangladesh</p>
+    </div>
+  </header>
+
+  <section>
+    <h2>About</h2>
+    <div class="content">
+      <p>I recently graduated in Computer Science and Engineering from Leading University, Sylhet. My research focuses on natural language processing for Bangla, including hate speech classification and detecting AI-generated text, along with deep learning for medical imaging.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Contact</h2>
+    <div class="content contact">
+      <div class="row"><span class="k">Email</span><span class="v todo">your email</span></div>
+      <div class="row"><span class="k">Phone</span><span class="v todo">your phone</span></div>
+      <div class="row"><span class="k">LinkedIn</span><span class="v todo">linkedin link</span></div>
+      <div class="row"><span class="k">GitHub</span><span class="v todo">github link</span></div>
+    </div>
+  </section>
+
+  <section class="edu">
+    <h2>Education</h2>
+    <div class="content">
+      <div class="deg">B.Sc. in Computer Science and Engineering</div>
+      <div class="inst">Leading University, Sylhet · Graduated 2026</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Research</h2>
+    <div class="content">
+      <ol class="pubs">
+        <li>
+          <div class="t">BanglaIEHS: Target-Aware Bengali Hate Speech Classification</div>
+          <div class="d">A Bangla hate speech dataset with a multi-task model that identifies both hateful content and its target.</div>
+          <span class="status ok">Accepted · IEEE COMPAS 2026, University of Dhaka</span>
+        </li>
+        <li>
+          <div class="t">Robust AI-Generated Bangla Text Detection under Distribution Shift</div>
+          <div class="d">Detecting text written by commercial LLMs across news, education and religion domains, using a self-built corpus of about 13,000 samples.</div>
+          <span class="status">In progress</span>
+        </li>
+        <li>
+          <div class="t">XrayVision: Does Anatomical Region Information Help Bone Fracture Classification?</div>
+          <div class="d">A study of whether knowing the body region improves fracture classification from X-ray images. Co-authored with my supervisor.</div>
+          <span class="status">In preparation</span>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section>
+    <h2>Interests</h2>
+    <div class="content">
+      <ul class="tags">
+        <li>Natural Language Processing</li>
+        <li>Bangla NLP</li>
+        <li>Machine Learning</li>
+        <li>Medical Imaging</li>
+        <li>AI-Generated Text Detection</li>
+      </ul>
+    </div>
+  </section>
+</article>
+<footer>Tasnia Haque Promy · Sylhet</footer>
+</div>
+</body></html>
