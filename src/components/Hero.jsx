@@ -12,13 +12,7 @@ function Hero() {
 
         <div className="hero-buttons">
           <a className="btn btn-primary" href="#research">View research</a>
-          <a className="btn btn-secondary" href={`mailto:${profile.email}`}>Get in touch</a>
-        </div>
-
-        <div className="hero-links">
-          <a href={profile.github} target="_blank" rel="noreferrer">GitHub</a>
-          <a href={profile.linkedin} target="_blank" rel="noreferrer">LinkedIn</a>
-          <a href={`mailto:${profile.email}`}>Email</a>
+          <a className="btn btn-secondary" href="#contact">Get in touch</a>
         </div>
       </div>
     </section>
