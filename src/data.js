@@ -28,7 +28,7 @@ export const papers = [
     title:
       'Evaluating LLM-Generated Synthetic Tabular Data for Classification: A Train-on-Synthetic, Test-on-Real Benchmark of ChatGPT, Gemini, and Copilot',
     authors: 'Tasnia Haque Promy, et al.',
-    venue: '',
+    venue: 'COMPAS 2026',
     status: 'Accepted',
     link: null,
   },
